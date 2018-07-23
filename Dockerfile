@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER I-Ta Tsai <itsai@gmail.com>
 
-RUN apt-get update && apt-get upgrade -y && \
+RUN apt-get update && apt-get upgrade -y --no-install-recommends && \
 	apt-get install -y \
         tzdata \
         python3 python3-pip && \
